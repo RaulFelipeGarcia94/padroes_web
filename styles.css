@@ -34,9 +34,18 @@ section {
   transition: transform 0.2s ease;
 }
 
+
 section:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form > p {
+  margin-bottom: 20px;
+}
+
+form > *:not(p) {
+  display: inline;
 }
 
 h2 {
@@ -64,6 +73,7 @@ input[type="checkbox"] {
 
 select {
   width: 100%;
+  max-width: 300px;
   padding: 12px;
   font-size: 18px;
   border: 2px solid #ccc;
@@ -78,6 +88,8 @@ select:hover {
 }
 
 button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -95,6 +107,7 @@ button[type="submit"]:hover {
 
 input[type="range"] {
   width: 100%;
+  max-width: 300px;
   margin-top: 10px;
 }
 
